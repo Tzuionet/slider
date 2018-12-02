@@ -1,48 +1,158 @@
 <!DOCTYPE html>
 <html lang="de">
-  <head>
+
+<head>
     <meta charset="utf-8">
 
-    <title>Titel</title>
+    <title>TLT Weihnachtsfeier 2018</title>
 
     <!-- Bootstrap CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Add icon library -->
+    <!-- Icon library FontAwesome -->
     <link rel="stylesheet" href="css/fontawesome-all.min.css">
-	
-	<!-- Flag Icon CSS -->
+
+    <!-- Flag Icon CSS -->
     <link href="css/flag-icon.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="css/custom.css" rel="stylesheet">
-    
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-     
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
+
+    <!-- Bootstrap JS -->
     <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom JS -->
     <script src="js/custom.js"></script>
 
-  </head>
+</head>
 
-  <body>
+<body style="font-family:cursive">
 
-    <table class="table">
-        <thead>
-            <tr>
-                <td>Header erste Spalte</td>
-                <td>Header zweite Spalte</td>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Erste Spalte</td>
-                <td>Zweite Spalte</td>
-            </tr>
-        </tbody>
-    </table>
-    
-  </body>
+    <img src="img/background.jpg" height="1080px">
+
+    <div id="content">
+        <div class="row">
+            <div class="col-lg-12">
+                <!-- Slideshow container -->
+                <div class="slideshow-container">
+                    <!-- Full-width slides/quotes -->
+                    <div class="mySlides">
+                        <q>Ich bin seit Beginn meiner Ausbildung / meines Studiums bei TLT</q>
+                    </div>
+                    <div class="mySlides">
+                        <q>Ich bin 2018 zur TLT gekommen</q>
+                    </div>
+                    <div class="mySlides">
+                        <q>Ich heiße Thomas</q>
+                    </div>
+
+                    <!-- Next/prev buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+
+                <!-- Dots/bullets/indicators -->
+                <div class="dot-container">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <table class="table table-borderless table-sm text-center">
+                    <tbody>
+                        <tr class="row-counter">
+                            <td>
+                                <div class="player-container">
+                                    <table class="table table-sm table-borderless">
+                                        <tr class="row-name">
+                                            <td colspan="3">
+                                                <div>Mina Ralwasser</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <i class="fa fa-chevron-left btn-plus-minus" onclick="score('#playerOne', 'minus')"></i>
+                                            </td>
+                                            <td id="playerOne" style="color:white">0</td>
+                                            <td>
+                                                <i class="fa fa-chevron-right btn-plus-minus" onclick="score('#playerOne', 'plus')"></i>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="player-container">
+                                    <table class="table table-sm table-borderless">
+                                        <tr class="row-name">
+                                            <td colspan="3">
+                                                <div>Mina Ralwasser</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <i class="fa fa-chevron-left btn-plus-minus" onclick="score('#playerTwo', 'minus')"></i>
+                                            </td>
+                                            <td id="playerTwo" style="color:white">0</td>
+                                            <td>
+                                                <i class="fa fa-chevron-right btn-plus-minus" onclick="score('#playerTwo', 'plus')"></i>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="player-container">
+                                    <table class="table table-sm table-borderless">
+                                        <tr class="row-name">
+                                            <td colspan="3">
+                                                <div>Mina Ralwasser</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <i class="fa fa-chevron-left btn-plus-minus" onclick="score('#playerThree', 'minus')"></i>
+                                            </td>
+                                            <td id="playerThree" style="color:white">0</td>
+                                            <td>
+                                                <i class="fa fa-chevron-right btn-plus-minus" onclick="score('#playerThree', 'plus')"></i>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="player-container">
+                                    <table class="table table-sm table-borderless">
+                                        <tr class="row-name">
+                                            <td colspan="3">
+                                                <div>Mina Ralwasser</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <i class="fa fa-chevron-left btn-plus-minus" onclick="score('#playerFour', 'minus')"></i>
+                                            </td>
+                                            <td id="playerFour" style="color:white">0</td>
+                                            <td>
+                                                <i class="fa fa-chevron-right btn-plus-minus" onclick="score('#playerFour', 'plus')"></i>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
 </html>
