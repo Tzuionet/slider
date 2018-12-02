@@ -19,12 +19,14 @@ body {font-family: Verdana, sans-serif; margin:0}
 }
 
 .mySlides > q {
-    font-size: 65px;
+    font-size: 80px;
     color: #006fb4;
     text-shadow: 1px 1px #000;
     font-weight: 700;
     font-family: cursive;
     font-style: italic;
+    height:232px;
+    display: inline-block;
 }
 
 /* Next & previous buttons */
@@ -79,9 +81,6 @@ body {font-family: Verdana, sans-serif; margin:0}
   background-color: #717171;
 }
 
-/* Add an italic font style to all quotes */
-q {font-style: italic;}
-
 /* Add a blue color to the author */
 .author {color: cornflowerblue;}
 
@@ -90,7 +89,7 @@ q {font-style: italic;}
 }
 
 .row-name {
-    font-size:30px;
+    font-size:55px;
     color:#fff;
 }
 
@@ -113,7 +112,7 @@ q {font-style: italic;}
 }
 
 .player-container {
-  margin: 20px; background: #006fb4; 
+  margin: 20px; background: #006fb4e0; 
   border-radius: 20px;
 }
 
@@ -122,4 +121,53 @@ q {font-style: italic;}
   top: -34px; 
   position: relative; 
   color: #999;
+}
+
+.btn-plus-minus:hover {
+  color:#fff;
+}
+
+.row-name > td {
+  border-top:none;
+}
+
+#slider {
+    margin:110px 300px;
+    background: #ffffff9c;
+    height:420px;
+}
+
+.prev-next {
+  font-size: 90px;
+  top: 155px;
+  color: #006fb4 !important;
+}
+
+.prev-next:hover {
+  color:#fff !important;
+  background: none !important;
+}
+
+#logo {
+  position: fixed;
+  right: 52px;
+  top: 76px;
+}
+
+#logo > img {
+  width:150px;
+}
+
+#muetze {
+  position: fixed;
+  right: 16px;
+  top: 25px;
+}
+
+#muetze > img {
+  width:135px;
+}
+
+#slider > div {
+  border: 5px solid #fff;
 }

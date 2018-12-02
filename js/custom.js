@@ -29,8 +29,8 @@ function showSlides(n) {
 
 function score(player, plusminus) {
   var oldScore = $(player).text();
-
   var newScore;
+  
   if (plusminus == "plus") {
     newScore = parseInt(oldScore) +1;
   } 
